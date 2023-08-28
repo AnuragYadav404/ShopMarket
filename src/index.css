@@ -1,0 +1,327 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  color: #121212;
+}
+textarea,
+input,
+button {
+  font-size: 1rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  background-color: white;
+  line-height: 1.5;
+  margin: 0;
+}
+button {
+  color: #3992ff;
+  font-weight: 500;
+}
+
+textarea:hover,
+input:hover,
+button:hover {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+button:active {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
+  transform: translateY(1px);
+}
+
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+#sidebar {
+  width: 100%;
+  background-color: #f7f7f7;
+  border-right: solid 1px #e3e3e3;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+}
+
+#sidebar {
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border: 2px solid gold;
+}
+
+#sidebar nav {
+  display: flex;
+}
+
+#sidebar ul {
+  display: flex;
+}
+
+
+#sidebar nav {
+  overflow: auto;
+}
+  
+#sidebar nav a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0.5rem;
+  border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
+  gap: 1rem;
+}
+
+#sidebar nav a:hover {
+  background: #e3e3e3;
+}
+
+#sidebar nav a.active {
+  background: hsl(224, 98%, 58%);
+  color: white;
+}
+
+#sidebar nav a.pending {
+  color: hsl(224, 98%, 58%);
+}
+
+#details {
+  display: flex;
+  flex-grow: 1;
+  flex: 1;
+  height: 90%;
+  width: 80%;
+}
+
+
+.itemsDisplay {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.searchItems {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  background-color: white; /* You can set the background color as needed */
+  z-index: 1; /* To ensure it appears above the item list */
+
+  /* margin-below: 16px; */
+}
+
+#search-form {
+  min-width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  position: sticky;
+}
+
+#search-form input{
+  min-width: 80%;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+
+.cardsImg img {
+  max-height: 250px;
+  max-width: 250px;
+}
+
+
+.items {
+  display: flex;
+  overflow: auto;
+  flex: 1;
+  width: 100%;
+}
+
+.itemsList {
+  flex: 1;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.itemsList li {
+  /* max-width: 250px; */
+  /* padding: 16px; */
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-height: 500px;
+  border: 2px solid rgb(190, 179, 179);
+  border-radius: 50px;
+}
+
+.cards {
+  padding: 8px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards h4{
+  max-width: 100%; /* Adjust the maximum width as needed */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Number of lines to display */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemElement {
+  display: flex;
+  width: 100%;
+}
+.itemImage, .itemAbout {
+  flex: 1;
+  margin: 16px;
+  padding: 16px;
+}
+.itemImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemImage img {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.itemButtons{
+  display: flex;
+  align-items: center;
+}
+.itemButtons button, .itemButtons p {
+  margin: 0px 8px;
+}
+
+.cartDisplay {
+  width: 100%;
+  overflow: auto;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px;
+  padding: 32px;
+  border-radius: 40px;
+  border: 2px solid grey;
+}
+
+
+.itemImg img {
+  margin-right: 100px;
+  max-width: 100px;
+  min-width: 100px;
+}
+
+.orderSummary {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.totalContainer {
+  margin: 16px;
+  padding: 32px;
+  border-radius: 50px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}

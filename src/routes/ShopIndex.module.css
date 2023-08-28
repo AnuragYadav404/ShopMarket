@@ -1,0 +1,27 @@
+.displayArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.categoryDisplay ul{
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+    gap: 32px;
+}
+
+.categoryDisplay ul button {
+    background-color: white;
+}
