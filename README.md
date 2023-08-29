@@ -6,11 +6,17 @@ Welcome to **Shop Market**, your one-stop destination for all your fashion cravi
 
 ##
 
+##
+
 ![ShopMarket Screenshots](./src/assets/item.png)
 
 ##
 
+##
+
 ![ShopMarket Screenshots](./src/assets/cart.png)
+
+##
 
 ## Table of Contents
 
