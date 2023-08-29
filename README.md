@@ -2,15 +2,21 @@
 
 Welcome to **Shop Market**, your one-stop destination for all your fashion cravings. This repository contains the frontend part of the website, built using React and React Router. Below, you'll find an overview of the project, its features, and instructions on how to get it up and running.
 
+##
+
+## ShopMarket Category-wise Item Display
+
 ![ShopMarket Screenshots](./src/assets/category.png)
 
 ##
 
-##
+## ShopMarket Item Display
 
 ![ShopMarket Screenshots](./src/assets/item.png)
 
 ##
+
+## ShopMarket Cart Display
 
 ##
 
