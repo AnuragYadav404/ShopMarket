@@ -58,7 +58,6 @@ button:active {
   transform: translateY(1px);
 }
 
-
 #root {
   display: flex;
   justify-content: center;
@@ -68,8 +67,6 @@ button:active {
   width: 100%;
 }
 
-
-
 #error-page {
   display: flex;
   flex-direction: column;
@@ -78,15 +75,11 @@ button:active {
   width: 100%;
 }
 
-
-
 ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
-
-
 
 #sidebar {
   width: 100%;
@@ -114,11 +107,10 @@ ul {
   display: flex;
 }
 
-
 #sidebar nav {
   overflow: auto;
 }
-  
+
 #sidebar nav a {
   display: flex;
   align-items: center;
@@ -152,7 +144,6 @@ ul {
   width: 80%;
 }
 
-
 .itemsDisplay {
   display: flex;
   flex-direction: column;
@@ -180,18 +171,16 @@ ul {
   position: sticky;
 }
 
-#search-form input{
+#search-form input {
   min-width: 80%;
   border: 2px solid black;
   border-radius: 50px;
 }
 
-
 .cardsImg img {
   max-height: 250px;
   max-width: 250px;
 }
-
 
 .items {
   display: flex;
@@ -231,7 +220,7 @@ ul {
   text-align: center;
 }
 
-.cards h4{
+.cards h4 {
   max-width: 100%; /* Adjust the maximum width as needed */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -244,7 +233,8 @@ ul {
   display: flex;
   width: 100%;
 }
-.itemImage, .itemAbout {
+.itemImage,
+.itemAbout {
   flex: 1;
   margin: 16px;
   padding: 16px;
@@ -259,11 +249,12 @@ ul {
   max-height: 600px;
 }
 
-.itemButtons{
+.itemButtons {
   display: flex;
   align-items: center;
 }
-.itemButtons button, .itemButtons p {
+.itemButtons button,
+.itemButtons p {
   margin: 0px 8px;
 }
 
@@ -281,7 +272,6 @@ ul {
   border-radius: 40px;
   border: 2px solid grey;
 }
-
 
 .itemImg img {
   margin-right: 100px;
@@ -306,8 +296,6 @@ ul {
   flex-direction: column;
   align-items: center;
 }
-
-
 
 ::-webkit-scrollbar {
   width: 20px;

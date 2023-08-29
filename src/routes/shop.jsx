@@ -15,23 +15,26 @@ export default function Shop() {
         {/* search for item using searchBar */}
         {/* filter items according to category */}
         <nav>
-            <ul>
-                {categories.map((category)=> {
-                    return (
-                        <li key={category}>
-                          <NavLink to={`/shop/${category}`} className={({isActive, isPending}) => {
-                            return (
-                              isActive ? "active" : isPending ? "pending" : ""
-                            )
-                          }}>
-                            {category.toUpperCase()}
-                          </NavLink>
-                        </li>
-                    )
-                })}
-            </ul>
+          <ul>
+            {categories.map((category) => {
+              return (
+                <li key={category}>
+                  <NavLink
+                    to={`/shop/${category}`}
+                    className={({ isActive, isPending }) => {
+                      return isActive ? "active" : isPending ? "pending" : "";
+                    }}
+                  >
+                    {category.toUpperCase()}
+                  </NavLink>
+                </li>
+              );
+            })}
+          </ul>
         </nav>
-        <Link to={`/shop/checkout/cart`}><button>Checkout Cart</button></Link>
+        <Link to={`/shop/checkout/cart`}>
+          <button>Checkout Cart</button>
+        </Link>
       </div>
       <div id="details">
         <Outlet />

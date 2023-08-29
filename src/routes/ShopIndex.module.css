@@ -1,34 +1,32 @@
 .displayArea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .content {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.categoryDisplay ul{
-    list-style: none;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 16px;
-    gap: 64px;
+.categoryDisplay ul {
+  list-style: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px;
+  gap: 64px;
 }
 
 .categoryDisplay ul button {
-    font-size: 24px;
-    padding: 16px;
-    border-radius: 40px;
-    width: 100%;
-    background-color: white;
-    border: 2px solid grey;
+  font-size: 24px;
+  padding: 16px;
+  border-radius: 40px;
+  width: 100%;
+  background-color: white;
+  border: 2px solid grey;
 }
-
-
