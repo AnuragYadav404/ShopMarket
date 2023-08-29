@@ -19,9 +19,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 16px;
-    gap: 32px;
+    gap: 64px;
 }
 
 .categoryDisplay ul button {
+    font-size: 24px;
+    padding: 16px;
+    border-radius: 40px;
+    width: 100%;
     background-color: white;
+    border: 2px solid grey;
 }
+
+

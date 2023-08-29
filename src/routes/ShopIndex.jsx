@@ -6,8 +6,8 @@ export default function ShopIndex() {
     return (
         <div className={styles.displayArea}>
             <div className={styles.content}>
-                <h1>Welcome to my shop!</h1>
-                <h2>Select a category to buy from: </h2>
+                <h1>Welcome to ShopMarket!</h1>
+                <h2>Select a category to explore: </h2>
                 <div className={styles.categoryDisplay}>
                     <ul>
                         {categories.map((cat) => {
